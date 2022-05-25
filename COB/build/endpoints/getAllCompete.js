@@ -16,7 +16,7 @@ const connection_1 = __importDefault(require("../connection"));
 function getAllCompete(req, res) {
     return __awaiter(this, void 0, void 0, function* () {
         try {
-            const competicao = req.query;
+            const cadastro = req.query;
             const compete = yield (0, connection_1.default)("cadastro");
             res.send(compete);
         }
